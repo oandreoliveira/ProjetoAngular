@@ -1,0 +1,33 @@
+{
+  "clientes": [
+    {
+      "id": "56d71d6b-502b-480f-9100-668fb0fc5f89",
+      "nome": "André",
+      "cpf": "11111111113",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b35b",
+      "nome": "Breno",
+      "cpf": "11111111112",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b35c",
+      "nome": "Carlos",
+      "cpf": "11111111113",
+      "isAtivo": true
+    },
+    {
+      "nome": "Bruno",
+      "cpf": "15252546895",
+      "id": "7M4rA_K"
+    },
+    {
+      "id": "i674B_i",
+      "nome": "Diogo",
+      "cpf": "55522266688",
+      "isAtivo": true
+    }
+  ]
+}

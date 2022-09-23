@@ -1,0 +1,34 @@
+{
+  "categorias": [
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b35b",
+      "nome": "Restaurantes",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b35c",
+      "nome": "Shopping Centers",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b40c",
+      "nome": "Super Mercados",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b88d",
+      "nome": "Parques Públicos",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b85p",
+      "nome": "Farmácias",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4s54w",
+      "nome": "Clínicas Médicas",
+      "isAtivo": true
+    }
+  ]
+}

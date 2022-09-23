@@ -1,0 +1,105 @@
+{
+  "estabelecimentos": [
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b88d",
+      "nome": "Shopping Recife",
+      "cnpj": "01102356000121",
+      "descricao": "O Shopping Recife permite a circulação de cães e gatos desde que o transporte seja feito em carrinhos apropriados que estão disponíveis na loja Cão Q Ri para aluguel. Custa R$15 por dia e comporta animais de até 10kg. Em ambientes lotados como shoppings, é aconselhável manter o pet na coleira e se manter distante das áreas de alimentação.",
+      "endereco": "Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, ",
+      "telefone": "81-32660000",
+      "email": "email@email.com.br",
+      "imagem": "https://revistadigitalsecurity.com.br/wp-content/uploads/2020/10/Shopping-Recife-Monitoramento.jpg",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b89d",
+      "nome": "Shopping Plaza",
+      "cnpj": "01102356000122",
+      "descricao": "O Shopping Plaza permite a circulação de cães e gatos desde que o transporte seja feito em carrinhos apropriados que estão disponíveis na loja Cão Q Ri para aluguel. Custa R$15 por dia e comporta animais de até 10kg. Em ambientes lotados como shoppings, é aconselhável manter o pet na coleira e se manter distante das áreas de alimentação.",
+      "endereco": "Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, ",
+      "telefone": "81-32660001",
+      "email": "email@email.com.br",
+      "imagem": "https://www.plazacasaforte.com.br/files/institutional/15488730556268-fachada_site2.jpg",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5a-ba0d2ab4b19d",
+      "nome": "Shopping RioMar",
+      "cnpj": "01102356000122",
+      "descricao": "Os clientes do mall podem alugar um carrinho no Pet Shop para circular com o seu animal. A entrada deles também é permitida, desde que estejam no colo/braço e sejam de pequeno porte,  com uso de coleira. O aluguel do carrinho custa R$15 por dia. ",
+      "endereco": "Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, ",
+      "telefone": "81-32660001",
+      "email": "email@email.com.br",
+      "imagem": "https://vivariomarrecife.com.br/wp-content/uploads/2018/09/53d3390de3e3e1aa3d46395e0c0a99f5_RioMarRecife_vlubambo-9958_AltaRes.jpg",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5b-ba0d2ab4b19d",
+      "nome": "Ferreira Costa (Tamarineira)",
+      "cnpj": "01102356000123",
+      "descricao": "As lojas de construção da rede permitem a entrada de pets de pequeno e médio porte e disponibilizam até um suporte que pode ser acoplado ao carrinho de compras. Esse aparelho não tem custo nenhum para os clientes e pode ser usado durante a permanência na loja. ",
+      "endereco": "Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, ",
+      "telefone": "81-32660003",
+      "email": "email@email.com.br",
+      "imagem": "https://fastly.4sqi.net/img/general/200x200/33132665_6ltc-w7mho-EQxClXXBMHgPzoK1Pqxzs3FNH1vKi6jY.jpg",
+      "isAtivo": true
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5b-ba0d2ab4b19y",
+      "nome": "Lalá Café (Espinheiro)",
+      "cnpj": "01102356000129",
+      "descricao": "Os pets são bem-vindos na parte externa da cafeteria, que tem capacidade para 20 pessoas. Lá, os bichinhos, de qualquer porte, devem estar usando a guia e ainda recebem uma tigela de água. ",
+      "endereco": "Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, ",
+      "telefone": "81-32660004",
+      "email": "email@email.com.br",
+      "imagem": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a1/76/54/ambiente.jpg?w=1000&h=-1&s=1",
+      "isAtivo?": true,
+      "id_categoria": " c685eb3c-384f-4899-9f5a-ba0d2ab4b36v",
+      "id_cliente": "c685eb3c-384f-4899-9f5a-ba0d2ab4b36d"
+    },
+    {
+      "id": "c685eb3c-384f-4899-9f5b-ba0d2ab4b19h",
+      "nome": "Dorinha Studio de Beleza (Boa Viagem)",
+      "cnpj": "01102356000130",
+      "descricao": "O badalado salão de beleza, localizado em Boa Viagem, permite apenas a entrada de animais de pequeno porte. Os pets devem ficar no colo ou nos braços do dono durante toda a espera e atendimento. O estabelecimento não possui nenhum serviço para os bichinhos e só recomendam que eles estejam com coleira.",
+      "endereco": "Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, ",
+      "telefone": "81-32660004",
+      "email": "email@email.com.br",
+      "imagem": "https://vivariomarrecife.com.br/wp-content/uploads/2018/09/fcd08f78033e18cacbd38b0453a8b96d_dorinha.jpg",
+      "isAtivo": true
+    },
+    {
+      "id": "wJWKHhu",
+      "nome": "Shoping Pateo",
+      "cnpj": "11111111111",
+      "descricao": "Teste teste testeTeste teste testeTeste teste testeTeste teste testeTeste teste testeTeste teste testeTeste teste testeTeste teste testeTeste teste testeTeste teste testeTeste teste testeTeste teste teste",
+      "endereco": "Teste teste teste",
+      "telefone": "81 3266-8856",
+      "email": "email@email.com.br",
+      "imagem": "https://cololido.com.br/images/unidades/patteo-olinda.jpeg",
+      "isAtivo": true
+    },
+    {
+      "nome": "Shopping Plaza2",
+      "cnpj": "11111111111",
+      "descricao": "As lojas de construção da rede permitem a entrada de pets de pequeno e médio porte e disponibilizam até um suporte que pode ser acoplado ao carrinho de compras. Esse aparelho não tem custo nenhum para os clientes e pode ser usado durante a permanência na loja. ",
+      "endereco": "Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço,",
+      "telefone": "8132660001",
+      "email": "email@email.com.br",
+      "imagem": "https://fastly.4sqi.net/img/general/200x200/33132665_6ltc-w7mho-EQxClXXBMHgPzoK1Pqxzs3FNH1vKi6jY.jpg",
+      "isAtivo": true,
+      "id": "oNmX-EJ"
+    },
+    {
+      "nome": "Shopping Plaza3",
+      "cnpj": "11111111111",
+      "descricao": "O Shopping Plaza permite a circulação de cães e gatos desde que o transporte seja feito em carrinhos apropriados que estão disponíveis na loja Cão Q Ri para aluguel. Custa R$15 por dia e comporta animais de até 10kg. Em ambientes lotados como shoppings, é aconselhável manter o pet na coleira e se manter distante das áreas de alimentação.",
+      "endereco": "Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço, Endereço,",
+      "telefone": "8132660001",
+      "email": "email@email.com.br",
+      "imagem": "https://vivariomarrecife.com.br/wp-content/uploads/2018/09/53d3390de3e3e1aa3d46395e0c0a99f5_RioMarRecife_vlubambo-9958_AltaRes.jpg",
+      "isAtivo": true,
+      "id": "4Bn_S9y"
+    }
+  ]
+}

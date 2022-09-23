@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Cliente {
+  id              String            @id @default(uuid())
+  nome            String
+  cpf             String            @unique
+  isAtivo         Boolean           @default(true)
+  usuario         Usuario?
+  Estabelecimento Estabelecimento[]
+
+  @@map("clientes")
+}
+
+model Estabelecimento {
+  id           String     @id @default(uuid())
+  nome         String
+  cnpj         String     @unique
+  descricao    String     @db.LongText
+  endereco     String
+  telefone     String
+  email        String
+  imagem       String
+  isAtivo      Boolean    @default(true)
+  id_cliente   String
+  cliente      Cliente?   @relation(fields: [id_cliente], references: [id])
+  id_categoria String
+  categoria    Categoria? @relation(fields: [id_categoria], references: [id])
+
+  @@map("estabelecimentos")
+}
+
+model Categoria {
+  id              String            @id @default(uuid())
+  nome            String            @unique
+  isAtivo         Boolean           @default(true)
+  estabelecimento Estabelecimento[]
+
+  @@map("categorias")
+}
+
+model Usuario {
+  id          String                @id @default(uuid())
+  cpf         String                @unique
+  senha       String
+  cliente     Cliente               @relation(fields: [id_cliente], references: [id])
+  id_cliente  String                @unique
+  isCliente   Boolean               @default(true)
+  isAtivo     Boolean               @default(true)
+
+  @@map("usuarios")
+}
