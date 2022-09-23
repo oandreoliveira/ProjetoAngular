@@ -8,7 +8,7 @@
 <br>
 <br>
 
-<h4 align="center">Projeto com desafios focados no desenvolvimento de Api Node e consumo em Angular. Programa Starter, GFT Brasil.</h1>
+<h4>Projeto com desafios focados no desenvolvimento de Api Node e consumo em Angular. Programa Starter, GFT Brasil.</h4>
 <br>
 <br>
 
