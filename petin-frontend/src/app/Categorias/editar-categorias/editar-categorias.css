@@ -1,0 +1,66 @@
+.Container {
+    padding-top: 200px;
+    padding-bottom: 350px;
+    background-color: #F1FAEE;
+}
+
+.titulo {
+
+
+    justify-content: center;
+    margin: 8px;
+    color: #E63946;
+    font-weight: bold;
+    font-family: fantasy;
+    border-color: #1D3557;
+}
+
+.Form {
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    background-color: transparent;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 10px 10px;
+    max-width: 450px;
+    min-height: 200px;
+
+}
+
+input::placeholder {
+    color: #A8DADC;
+    font-style: italic;
+    background-color: #F1FAEE;
+
+}
+
+.form-control {
+    background-color: #F1FAEE;
+}
+
+
+.btn {
+    margin: auto;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.validation-error p {
+    color: #E63946;
+    margin-top: .4em;
+    border-left: 3px solid #E63946;
+    padding-left: 0.2em;
+
+}

@@ -1,0 +1,110 @@
+<div class="Container">
+    <div class="row titulo">
+        <div>
+            <a [routerLink]="['/Estabelecimentos']"> <img src="/assets/logoazul03.png" width="100px" alt=""> </a>
+
+        </div>
+        <div>
+            <h1>Atualizar Estabelecimento</h1>
+        </div>
+    </div>
+
+    <form class="Form" [formGroup]="editaEstab" (submit)="editaEstabelecimento()" #formDir="ngForm">
+
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Nome</label>
+            <input type="text" id="form1" class="form-control" formControlName="nome" placeholder="Nome" />
+            <div *ngIf="nome.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="nome.errors?.['required']">O campo Nome é obrigatório.</p>
+            </div>
+        </div>
+
+        <!-- Cnpj input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">CNPJ</label>
+            <input type="text" id="form2" class="form-control" formControlName="cnpj" placeholder="CNPJ" />
+            <div *ngIf="cnpj.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="cnpj.errors?.['required']">O campo CNPJ é obrigatório.</p>
+            </div>
+        </div>
+
+        <!-- Descricao input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Descrição</label>
+            <input type="text" id="form3" class="form-control" formControlName="descricao"
+                placeholder="Descreva como funciona o seu Estabelecimento" />
+            <div *ngIf="descricao.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="descricao.errors?.['required']">O campo Descrição é obrigatório.</p>
+
+            </div>
+        </div>
+
+        <!-- Endereco input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Endereço</label>
+            <input type="text" id="form4" class="form-control" formControlName="endereco" placeholder="Endereço" />
+            <div *ngIf="endereco.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="endereco.errors?.['required']">O campo Endereço é obrigatório.</p>
+
+            </div>
+        </div>
+        <!-- Telefone input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Telefone</label>
+            <input type="text" id="form5" class="form-control" formControlName="telefone"
+                placeholder="Telefone (81) 00000-0000" />
+            <div *ngIf="telefone.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="telefone.errors?.['required']">O campo Telefone é obrigatório.</p>
+
+            </div>
+        </div>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">E-mail</label>
+            <input type="text" id="form6" class="form-control" formControlName="email" placeholder="E-mail" />
+            <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="email.errors?.['required']">O campo E-mail é obrigatório.</p>
+
+            </div>
+        </div>
+        <!-- Imagem input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Imagem</label>
+            <input type="text" id="form7" class="form-control" formControlName="imagem"
+                placeholder="Insira um link de uma Imagem do seu estabelecimento" />
+            <div *ngIf="imagem.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="imagem.errors?.['required']">O campo Imagem é obrigatório.</p>
+
+            </div>
+        </div>
+
+        <!-- Categoria Select -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Categoria</label>
+            <select class="form-control" formControlName="id_categoria">
+                <option *ngFor="let categoria of categorias" value={{categoria.id}}>
+                    {{categoria.nome}}
+                </option>
+            </select>
+        </div>
+        <!-- Cliente Select -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Cliente</label>
+            <select class="form-control" formControlName="id_cliente">
+                <option *ngFor="let cliente of clientes" value={{cliente.id}}>
+                    {{cliente.nome}}
+                </option>
+            </select>
+        </div>
+
+        <!-- Submit button -->
+        <div class="submit">
+            <button type="submit" class="btn btn-outline-success btn-rounded "
+                (click)="onActivate($event)">Atualizar</button>
+            <button type="" class="btn btn-outline-danger btn-rounded" [routerLink]="['/Estabelecimentos']"
+                (click)="onActivate($event)"> Cancelar
+            </button>
+        </div>
+    </form>
+</div>

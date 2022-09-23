@@ -1,0 +1,77 @@
+<div class="bgPage ">
+
+    <div class="row titulo">
+        <a [routerLink]="['/Area-Admnistrativa']">
+            <div>
+                <img src="/assets/logoazul03.png" width="100px" alt="">
+            </div>
+        </a>
+        <div>
+            <p> Estabelecimentos</p>
+        </div>
+    </div>
+    <div class="btn-criar">
+        <div class="btn-1">
+            <button type="submit" class="btnCadastro" [routerLink]="['/Cadastrar-Estabelecimentos']"> Cadastrar
+            </button>
+        </div>
+        <div class="search">
+            <div class="input-group rounded src-bar">
+                <input type="search" class="form-control rounded" placeholder="Pesquisar local" aria-label="Pesquisar"
+                    aria-describedby="search-addon" (input)="pesquisar($event)" />
+                <!-- Icone da lupa -->
+                <span class="border-0 srch-icon" id="search-addon">
+                    <img width="28px" height="28px"
+                        src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container main-containerTable align-items-center">
+        <table class="table align-middle mb-0 ">
+            <thead class="bg">
+                <tr>
+                    <th>Estabelecimento</th>
+                    <th>CNPJ</th>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ações
+                    </th>
+                </tr>
+            </thead>
+            <tbody
+                *ngFor="let estabelecimento of estabelecimentos | paginate: { itemsPerPage: 5, currentPage: paginaAtual }; let i = index"
+                class="bodyTable">
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="{{estabelecimento.imagem}}" alt="" style="width: 50px; height: 50px"
+                                class="rounded-circle" />
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1">{{estabelecimento.nome}}</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <p class="fw-bold mb-1">{{estabelecimento.cnpj}}</p>
+                        </div>
+                    </td>
+                    <div class="d-flex align-items-center">
+                        <td class="botao">
+                            <button type="button" [routerLink]="['/Editar-Estabelecimentos', estabelecimento.id]"
+                                class="btn btn-outline-info btn-rounded bt-2">
+                                Atualizar
+                            </button>
+                            <button type="button" (click)="delEstabelecimento(estabelecimento.id)"
+                                class="btn btn-outline-danger btn-rounded bt-3">
+                                Deletar
+                            </button>
+                        </td>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination fixed-botton">
+        <pagination-controls (click)="onActivate($event)" (pageChange)="paginaAtual = $event"></pagination-controls>
+    </div>
+</div>

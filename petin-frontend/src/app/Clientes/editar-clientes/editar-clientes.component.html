@@ -1,0 +1,38 @@
+<div class="Container">
+    <div class="row titulo">
+        <div>
+            <a [routerLink]="['/Clientes']"> <img src="/assets/logoazul03.png" width="100px" alt=""></a>
+
+        </div>
+        <div>
+            <h1>Atualizar Cliente</h1>
+        </div>
+    </div>
+
+    <form class="Form" [formGroup]="editaCli" (submit)="editaCliente()" #formDir="ngForm">
+
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Nome</label>
+            <input type="text" id="form1" class="form-control" formControlName="nome" placeholder="Nome" />
+            <div *ngIf="nome.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="nome.errors?.['required']">O campo Nome é obrigatório.</p>
+            </div>
+        </div>
+
+        <!-- Cpf input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">CPF</label>
+            <input type="text" id="form2" class="form-control" formControlName="cpf" placeholder="CPF" />
+            <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="cpf.errors?.['required']">O campo CPF é obrigatório.</p>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="submit">
+            <button type="submit" class="btn btn-outline-success btn-rounded ">Atualizar</button>
+            <button type="" class="btn btn-outline-danger btn-rounded" [routerLink]="['/Clientes']"> Cancelar </button>
+        </div>
+    </form>
+</div>

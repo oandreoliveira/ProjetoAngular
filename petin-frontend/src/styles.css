@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+.main-container {
+
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    background-color: transparent;
+
+
+}
+
+
+/* NavBar */
+.bg-light1 {
+
+    background-color: #457B9D;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #A8DADC;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+
+#navbarResponsive {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.footer {
+    height: 50px;
+    text-align: center;
+}
+
+.bg-light2 {
+    background-color: #1D3557;
+}
+
+a {
+    color: #141619;
+    text-decoration: solid;
+}
+
+
+.espaco {
+    padding-bottom: 20px;
+
+}

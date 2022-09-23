@@ -1,0 +1,41 @@
+<div class="Container">
+
+    <form class="Form fadeInDown" [formGroup]="postUser" (submit)="onSubmit()" #formDir="ngForm">
+        <div class="row titulo">
+            <div>
+                <a [routerLink]="['/Home']"> <img src="/assets/logoazul03.png" width="100px" alt=""></a>
+
+            </div>
+            <div>
+                <p> Login</p>
+            </div>
+        </div>
+        <!-- Cpf input -->
+        <div class="form-outline mb-4">
+            <label>CPF</label>
+            <input type="text" id="form1" class="form-control" formControlName="cpf" placeholder="CPF" />
+
+            <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="cpf.errors?.['required']">O campo CPF é obrigatório.</p>
+
+            </div>
+
+            <!-- senha -->
+            <label>Senha</label>
+            <div class="form-outline mb-4">
+                <input type="password" id="form2" class="form-control" formControlName="senha" placeholder="Senha" />
+                <div *ngIf="senha.invalid && formDir.submitted" class="validation-error">
+                    <p *ngIf="senha.errors?.['required']">O campo Senha é obrigatório.</p>
+
+
+                </div>
+            </div>
+
+            <!-- Submit button -->
+
+            <div class="btn-1">
+                <button type="submit" class="btn"> Entrar </button>
+            </div>
+        </div>
+    </form>
+</div>

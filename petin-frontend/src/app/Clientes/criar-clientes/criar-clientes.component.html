@@ -1,0 +1,50 @@
+<div class="Container">
+    <div class="row titulo">
+        <a [routerLink]="['/Clientes']">
+            <div>
+
+                <img src="/assets/logoazul03.png" width="100px" alt="">
+
+            </div>
+        </a>
+        <div>
+            <h1>Cadatrar Cliente</h1>
+        </div>
+
+    </div>
+
+    <form class="Form fadeInDown" [formGroup]="postCli" (submit)="addCliente()" #formDir="ngForm">
+
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Nome</label>
+            <input type="text" id="form1" class="form-control" formControlName="nome" placeholder="Nome" />
+
+            <div *ngIf="nome.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="nome.errors?.['required']">O campo Nome é obrigatório.</p>
+            </div>
+
+        </div>
+
+        <!-- Cpf input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">CPF</label>
+            <input type="text" id="form2" class="form-control" formControlName="cpf" placeholder="CPF" />
+            <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="cpf.errors?.['required']">O campo CPF é obrigatório.</p>
+                <p *ngIf="cpf.errors?.['maxlenght']">O CPF só pode ter até 11 caracteres.</p>
+                <p *ngIf="cpf.errors?.['minlenght']">O CPF só pode ter até 11 caracteres.</p>
+
+
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="submit">
+            <button type="submit" class="btn btn-outline-success btn-rounded ">Cadastrar</button>
+            <button type="" class="btn btn-outline-danger btn-rounded" [routerLink]="['/Clientes']"> Cancelar </button>
+        </div>
+
+    </form>
+
+</div>

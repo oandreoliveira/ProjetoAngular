@@ -1,0 +1,30 @@
+<div class="Container">
+    <div class="row titulo">
+        <div>
+            <a [routerLink]="['/Categorias']"> <img src="/assets/logoazul03.png" width="100px" alt=""></a>
+        </div>
+        <div>
+            <h1>Atualizar Categoria</h1>
+        </div>
+    </div>
+
+    <form class="Form" [formGroup]="editaCat" (submit)="editaCategoria()" #formDir="ngForm">
+
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Nome</label>
+            <input type="text" id="form1" class="form-control" formControlName="nome" placeholder="Nome da Categoria" />
+            <div *ngIf="nome.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="nome.errors?.['required']">O campo Nome da Categoria é obrigatório.</p>
+            </div>
+        </div>
+
+
+        <!-- Submit button -->
+        <div class="submit">
+            <button type="submit" class="btn btn-outline-success btn-rounded ">Atualizar</button>
+            <button type="" class="btn btn-outline-danger btn-rounded" [routerLink]="['/Categorias']"> Cancelar
+            </button>
+        </div>
+    </form>
+</div>

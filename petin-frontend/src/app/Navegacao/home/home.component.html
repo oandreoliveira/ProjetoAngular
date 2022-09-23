@@ -1,0 +1,103 @@
+<div class="home">
+    <header class="row text-center bg-secondary1 py-6 mb-6 ">
+        <div class="container h-100">
+            <div class="h-12 align-items-center">
+                <div class="col-lg-12">
+                    <img src="/assets/petazul.png" height="320px" alt="">
+                </div>
+                <div class=" slogan text-center">
+                    <p>Os Locais onde os seus Pets são Bem-Vindos!</p>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <div class=" container main-container">
+
+        <div class="row teste1">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a class=" " [routerLink]="['/Estabelecimentos-Home']"> <img class="d-block w-100 "
+                                style=" border-radius: 15px" src=" /assets/plaza-shopping.jpg" height="400px"
+                                alt="First slide"></a>
+
+                    </div>
+                    <div class="carousel-item">
+                        <a class=" " [routerLink]="['/Estabelecimentos-Home']"> <img class="d-block w-100"
+                                style=" border-radius: 15px" src="/assets/McDonalds.jpg" height="400px"
+                                alt="Second slide"></a>
+
+                    </div>
+                    <div class="carousel-item">
+                        <a class="" [routerLink]="['/Estabelecimentos-Home']"> <img class="d-block w-100"
+                                style=" border-radius: 15px" src="/assets/shopping-recife.jpg" height="400px"
+                                alt="Third slide"> </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="col-sm-5 col-md-5 " style="float:right">
+                <h1 class="titulo">Todos os Locais</h1>
+                <p class="lead mb-5 texto">Está em Recife e não sabe aonde ir e levar o seu amigo de quatro patas com
+                    você?
+                    Aqui nós te informamos
+                    todos os locais em que seu Pet é bem-vindo!
+                    Clique em "Saiba Mais" e descubra todos os
+                    estabelecimentos.
+                </p>
+                <a type="submit" class="btn" [routerLink]="['/Estabelecimentos-Home']">
+                    Saiba Mais
+                </a>
+            </div>
+        </div>
+        <div class="row teste2">
+            <div class="col-sm-5 col-md-5 ">
+                <h1 class="titulo">Nossos Parceiros</h1>
+                <p class="lead mb-5 texto">Conheça os nossos amigos que apoiam a causa animal e a inclusão dos nossos
+                    Pets na sociedade. A PetIn busca a inserção dos Pets nas atividades do nosso cotidiano e nossos
+                    parceiros fazem isto ser possível.
+                </p>
+            </div>
+            <div id="carouselExampleSlidesOnly2" class="carousel slide col-sm-7 col-md-7" data-ride="carousel">
+                <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.instagram.com/petz/" target="_blank"> <img class="d-block w-100"
+                                    style=" border-radius: 15px" src="/assets/Petz.png" height="400px"
+                                    alt="First slide"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.instagram.com/pettownrecife/" target="_blank">
+                                <img class="d-block w-100" style=" border-radius: 15px" src="/assets/PetTown.jpg"
+                                    height="400px" alt="Second slide"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.instagram.com/primopetoficial/" target="_blank"> <img
+                                    class="d-block w-100" style=" border-radius: 15px" src="/assets/PrimoPet.jpg"
+                                    height="400px" alt="Third slide"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fim Content -->

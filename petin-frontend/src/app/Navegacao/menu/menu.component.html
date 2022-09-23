@@ -1,0 +1,37 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light1  fixed-top">
+    <div class="container">
+        <div>
+
+            <a class="navbar-brand " [routerLink]="['/Home']"> <img src="/assets/logoazul02.png" width="50px"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li [ngSwitch]="usuarioService.isUserLoggedInCliente()" class="nav-item">
+                    <a *ngSwitchCase="true" class="nav-link" [routerLink]="['/Area-Admnistrativa']">Área
+                        Administrativa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " [routerLink]="['/Estabelecimentos-Home']">Estabelecimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " [routerLink]="['/SobreNos']">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/Contato']">Contato</a>
+                </li>
+
+                <li [ngSwitch]="usuarioService.isUserLoggedIn()" class="nav-item">
+                    <a *ngSwitchCase="false" class="nav-link" [routerLink]="['/Login']">Login</a>
+                    <a *ngSwitchCase="true" class="nav-link" (click)="logout()">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Fim Navigation -->

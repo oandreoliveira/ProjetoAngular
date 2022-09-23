@@ -1,0 +1,70 @@
+/* Home */
+
+.bg-secondary1 {
+
+    background-color: #F1FAEE;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container3 {
+    display: flex;
+    justify-content: right;
+}
+
+.titulo {
+    color: #E63946;
+    font-weight: bold;
+    font-size: 3.9rem;
+    font-family: fantasy;
+
+
+}
+
+.texto {
+    color: #1D3557;
+    font-size: 1.2rem;
+    font-family: fantasy 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.slogan {
+    color: #E63946;
+    font-size: 2.0rem;
+    font-family: fantasy;
+
+}
+
+.btn {
+    background-color: #E63946;
+    color: #E5E5E5;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 20px;
+
+}
+
+.carousel-item {
+    border-radius: 100%;
+
+}
+
+.carousel {
+    border-radius: 100%;
+}
+
+.home {
+    background-color: #F1FAEE;
+
+}
+
+.teste1 {
+
+
+    margin-bottom: 60px;
+    margin-top: 80px;
+
+}

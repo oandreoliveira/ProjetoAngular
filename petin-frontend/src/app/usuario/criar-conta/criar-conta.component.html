@@ -1,0 +1,61 @@
+<div class="Container">
+    <div class="row titulo">
+        <a [routerLink]="['/Area-Admnistrativa']">
+            <div>
+
+                <img src="/assets/logoazul03.png" width="100px" alt="">
+
+            </div>
+        </a>
+        <div>
+            <h1>Cadatrar Usuário</h1>
+        </div>
+
+    </div>
+
+    <form class="Form fadeInDown" [formGroup]="postUser" (submit)="addUsuario()" #formDir="ngForm">
+
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Cpf</label>
+            <input type="text" id="form1" class="form-control" formControlName="cpf" placeholder="CPF" />
+
+            <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="cpf.errors?.['required']">O campo CPF é obrigatório.</p>
+            </div>
+        </div>
+        <!-- Cliente Select -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Cliente</label>
+            <select class="form-control" formControlName="id_cliente">
+                <option *ngFor="let cliente of clientes" value={{cliente.id}}>
+                    {{cliente.nome}}
+                </option>
+            </select>
+            <div *ngIf="id_cliente.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="id_cliente.errors?.['required']">O campo Cliente é obrigatório.</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Cpf input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Senha</label>
+            <input type="text" id="form2" class="form-control" formControlName="senha" placeholder="Senha" />
+            <div *ngIf="senha.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="senha.errors?.['required']">O campo Senha é obrigatório.</p>
+
+
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="submit">
+            <button type="submit" class="btn btn-outline-success btn-rounded ">Cadastrar</button>
+            <button type="" class="btn btn-outline-danger btn-rounded" [routerLink]="['/Area-Admnistrativa']"> Cancelar
+            </button>
+        </div>
+    </form>
+</div>
